@@ -1,0 +1,41 @@
+.menubar
+{
+	
+	top:0;
+	left:250;
+	display:inline-block;
+	position:fixed;
+	
+}
+
+.start{
+	position: absolute;
+	    top: 80px;
+}
+
+ul {
+position:fixed;
+border-radius:0px 0px 10px 10px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color:rgba(0, 0, 0, 0.65);
+}
+
+li {
+    float: left;
+}
+
+li a{
+    display: inline-block;
+    color: white;
+    text-align: center;
+	border-radius:0px;
+    padding: 16px 30px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: rgba(144, 150, 150, 0.78);
+}

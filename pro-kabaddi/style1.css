@@ -1,0 +1,131 @@
+	.button {
+	  border-radius: 4px;
+	  background-color: #f4511e;
+	  border: none;
+	  color: #FFFFFF;
+	  text-align: center;
+	  font-size: 28px;
+	  padding: 20px;
+	  width: 500px;
+	  transition: all 0.5s;
+	  cursor: pointer;
+	  margin: 5px;
+	}
+
+	.button next {
+	  cursor: pointer;
+	  display: inline-block;
+	  position: relative;
+	  transition: 0.5s;
+	}
+
+	.button next:after {
+	  content: ' hope you will enjoy';
+	  position: relative;
+	  opacity: 0;
+	  top: 0;
+	  right: -20px;
+	  transition: 0.5s;
+	}
+
+	.button:hover next {
+	  padding-right: 25px;
+	}
+
+	.button:hover next:after {
+	  opacity: 1;
+	  right: 0;
+	}
+	
+	.button:active {
+		
+	  background-color: #f4511e;
+	  box-shadow: 0 4px black;
+	  animation-name:rubberband;
+	  transform: translateY(5px);
+	}
+	
+	.input {
+	  border-radius: 4px;
+	  background-color: #f4511e;
+	  border: none; 
+	  font-family: Comic Sans MS;
+	  color: #FFFFFF;
+	  text-align: center;
+	  font-size: 10px;
+	  padding: 5px;
+	  width: ;
+	  transition: all 0.5s;
+	  cursor: pointer;
+	  margin: 5px;
+	}
+	
+	
+	.textshadow
+	{
+		text-shadow:4px 4px 8px black;
+		text-decoration:blink;
+	}
+	
+	.heading1
+	{
+		color:rgba(244, 136, 26, 0.77);
+		text-shadow:4px 4px 8px rgba(161, 93, 244, 0.77);
+	}
+	
+	.proceedbutton
+	{
+  	  border-radius: 6px;
+  	  background-color: #f4511e;
+  	  border: none;
+  	  color: #FFFFFF;
+  	  text-align: center;
+  	  font-size: 28px;
+  	  padding: 5px;
+  	  width: ;
+  	  transition: all 0.5s;
+  	  cursor: pointer;
+  	  margin: 5px;
+	}
+	
+	.proceedbutton:hover
+	{
+  	  border-radius: 6px;
+  	  background-color: #1bcc0a;
+  	 
+	}
+	
+	
+	.seat {
+	  padding: 7px 7px;
+	  font-size: 7px;
+	  text-align: center;
+	  cursor: pointer;
+	  outline: none;
+	  color: #fff;
+	  background-color: #4CAF50;
+	  border: none;
+	  border-radius: 7px;
+	  box-shadow: 0 3px #999;
+	}
+
+	.seat:hover {background-color: #3e8e41}
+
+	.seat:active, :after{
+	  background-color: #3e8e41;
+	  box-shadow: 0 4px #666;
+	  transform: translateY(2px);
+	}
+	.seatnext{
+	  padding: 7px 7px;
+	  font-size: 7px;
+	  text-align: center;
+	  cursor: pointer;
+	  outline: none;
+	  color: #fff;
+	  background-color: #3e8e41;
+	  border: none;
+	  border-radius: 7px;
+	  box-shadow: 0 3px #999;
+	box-shadow: 0 4px #666;
+  

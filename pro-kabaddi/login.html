@@ -1,0 +1,212 @@
+<html>
+<head>
+<title> Pro Kabaddi Leag </title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="checkbox.css">
+<link rel="stylesheet" href="style1.css">
+
+<script type="text/javascript">
+function validateEmail()
+{
+   /*var emailID = document.reg.email.value;
+   var atpos = emailID.indexOf("@");
+   
+   
+   if (atpos < 1) 
+   {
+	   document.body.style.backgroundColor = "red";
+      alert("Please enter correct email ID")
+	   //document.body.style.backgroundImage="url('PCTV-2001433070-hm.jpg')";
+   }
+   return true;*/
+   
+   
+   text = document.getElementById("eid").value;
+   if(/\@\.\bcom\b/.test(text))
+  {
+  	
+  }
+  else{
+  alert("Enter valid e-mail")
+	  return true;
+  }
+}
+
+function seatSelection()
+{
+	
+	var win=window.open("seats.html","mywindow","status=1,height=650,width=700")
+}
+
+function validPassword()
+{
+ var len=document.reg.password.value
+  if(len.length < 6)
+			  alert("Password should be minimum 6 letters")
+}
+
+function validate()
+      {
+		  if( document.reg.fname.value == "" )
+		  {
+			  alert("please fill all fields");
+			  
+		  }
+			  else if( document.reg.lname.value == "" )
+			  {
+				  alert("please fill all fields");
+				  
+			  }
+				  else if( document.reg.email.value == "" )
+				  {
+					  alert("please fill all fields");
+
+				  }
+				  else{
+					  senddata()
+				  }
+				   
+	  }
+		  
+      function cl()
+	  {
+		  window.open("ticket.html");
+		  self.close();
+		  
+	  	
+	  }
+	  
+	  function senddata()
+	  {
+		
+	  	localStorage.setItem("firstname",document.getElementById("fname").value);
+		localStorage.setItem("lastname",document.getElementById("lname").value);
+		localStorage.setItem("match",document.getElementById("match").value);
+		cl();
+		
+	  }
+	  
+	  window.onfocus=function()
+	  {
+		  if(localStorage.seat){
+		document.getElementById("seatdisplay").className="box"
+	  	document.getElementById("seatdisplay").innerHTML="Slected seats are : "+localStorage.getItem("seat")
+			  
+		  }
+		  	
+			  else{  
+		document.getElementById("seatdisplay").innerHTML="No seats are selected"
+		  }
+	  }  
+	  
+	  function phonevalidation() {
+	      text = document.getElementById("phone").value;
+	      if(/\D/.test(text))
+		  {
+		  	alert("Only numbers are accepted")
+		  }
+	  }
+	  
+	  function fnamevalidation() {
+	      text = document.getElementById("fname").value;
+	      if(/\d/.test(text))
+		  {
+		  	alert("Please enter valid name")
+		  }
+	  }
+	  
+	  function lnamevalidation() {
+	      text = document.getElementById("lname").value;
+	      if(/\d/.test(text))
+		  {
+		  	alert("Please enter valid name")
+		  }
+	  }
+   
+   
+</script>
+</head>
+<body background="background/b9.jpg" text="white" onload="displayseats()">
+
+<div id="nav">
+<div id="nav_wrapper">
+<ul>
+<li><img src="main_logo.png" height="50" width="100"></li>
+<li>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp</li>
+<li><a href="main page.html">Home</a></li>
+<li><a href="~1st-managment.html.htm">Management</a></li>
+<li><a href="#">Teams</a>
+<ul>
+	
+	<li><a href="umumba.html">Umumba</a></li>
+	<li><a href="patna pirets.html">Patna Pirates</a></li>
+	<li><a href="puneri paltan.html">Puneri Paltan</a></li>
+	<li><a href="jaipur_panthers.html">Jaipur Panthers</a></li>
+	<li><a href="bengaluru_bulls.html">Bengaluru Bulls</a></li>
+	<li><a href="dabang_delhi.html">Dabang Delhi</a></li>
+	<li><a href="bengal warriors.html">Bengal Warriors</a></li>
+	<li><a href="Telugu titans.html">Telugu Titans</a></li>
+</ul>
+</li>
+<li><a href="players.html">Gallery</a></li>
+<li><a href="Reasult table.html">Table</a></li>
+<li><a href="login.html">Login</a></li>
+</ul>
+</div></div>
+<div class="start" style="left:450">
+<center>
+	
+<h1 id="f">Registration form</h1>
+<div id="f1"><form name="reg" onsubmit=validate()>
+First name:  <input class="input" id="fname" type="text" name="fname" onblur="fnamevalidation()"/>
+<br><br>
+Last name:  <input type="text" id="lname" name="lname" class="input" onblur="lnamevalidation()"/>
+<br><br>
+Phone no:  <input type="text" id="phone" name="phone" class="input" onblur="phonevalidation()"/>
+<br><br>
+E-mail ID :  <input type="text" id="eid" name="email" onblur="validateEmail()" class="input"/>
+<br><br>
+
+<div>
+Gender  :  
+        
+		
+		            <input id="radio-2" class="radio-custom" name="radio-group" type="radio">
+		            <label for="radio-2" class="radio-custom-label">Male</label>
+		      
+		            <input id="radio-3" class="radio-custom" name="radio-group" type="radio">
+		            <label for="radio-3" class="radio-custom-label">Female</label>
+		        </div>
+<br>
+Match   :  <select id="match" class="input" name="Department">
+<option value="Puneri Paltan VS U Mumba" selected>Puneri Paltan VS U Mumba</option>
+<option value="U Mumba VS Jaipur Pink Panthers">U Mumba VS Jaipur Pink Panthers</option>
+<option value="Bengaluru Bulls VS Telugu Titans">Bengaluru Bulls VS Telugu Titans</option>
+<option value="Patna Pirates VS Bengal Warriors">Patna Pirates VS Bengal Warriors</option>
+<option value="Dabang Delhi K.C. VS Patna Pirates">Dabang Delhi K.C. VS Patna Pirates</option>
+<option value="Umumba VS Patna Pirates">Umumba VS Patna Pirates</option>
+<option value="Bengaluru Bulls VS Dabang Delhi K.C.">Bengaluru Bulls VS Dabang Delhi K.C.</option>
+<option value="Telugu Titans VS Puneri Paltan">Telugu Titans VS Puneri Paltan</option>
+</select>
+<br>
+<br>
+<div id="seatdisplay">
+	No seats are selected
+</div>
+	
+<br>
+<input type="button" class="proceedbutton" name="seat" onclick="seatSelection()" value="Select a seat">
+<input type="submit" class="proceedbutton" name="submit" value="Submit" onclick="validate()" />
+<input type="reset" name="reset" class="proceedbutton" value="Reset" />
+</form></div></center>
+	
+	
+	
+	
+	
+	
+	</div>
+	
+	
+</body>
+</html>

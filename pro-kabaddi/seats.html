@@ -1,0 +1,595 @@
+<html>
+<head>
+<link rel="Stylesheet" href="checkbox.css">
+<link rel="Stylesheet" href="style1.css">
+<script language="javascript">
+var total=""
+
+var blockobj = null;
+            
+function rightin(){
+    blockobj.style.left = parseInt(blockobj.style.left) + 10 + 'px';
+   if(parseInt(blockobj.style.left)!=0)
+   animate = setTimeout(rightin,10);
+   else
+	  blockobj.style.left= 0 + 'px' 
+ }
+			
+            function init(){
+               blockobj = document.getElementById('block');
+               blockobj.style.position= 'relative'; 
+               blockobj.style.left = '-700px';
+               rightin()
+	           
+			}
+            
+            window.onload =init;
+			
+			
+			function rightout()
+			{
+			    blockobj.style.left = parseInt(blockobj.style.left) + 10 + 'px';
+			   if(parseInt(blockobj.style.left)!=700)
+			   animate = setTimeout(rightout,10);
+			   else
+				  blockobj.style.left= 700 + 'px'
+				   
+			   if(parseInt(blockobj.style.left)==700)
+			   {
+			   	self.close()
+			   }
+			   
+			}
+
+
+function addseat(element)
+{
+	total=total+element+" "
+	localStorage.setItem("seat",total);
+	
+	
+}
+
+function cls()
+{
+	
+	rightout()
+
+}	
+</script>
+</head>
+
+<body background=background/b1.jpg>
+	
+	<br>
+	
+	<div id="block"><center>
+    <div>
+      <input id="a1" class="checkbox-custom" name="a1" type="checkbox" onclick="addseat(this.id)">
+      <label for="a1" class="checkbox-custom-label"></label>
+   
+      
+      <input id="a2" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a2" class="checkbox-custom-label"></label>
+	  
+      <input id="a3" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a3" class="checkbox-custom-label"></label>
+	  
+      <input id="a4" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a4" class="checkbox-custom-label"></label>
+	  
+      <input id="a5" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a5" class="checkbox-custom-label"></label>
+	  
+      <input id="a6" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a6" class="checkbox-custom-label"></label>
+	  
+      <input id="a7" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a7" class="checkbox-custom-label"></label>
+	  
+      <input id="a8" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a8" class="checkbox-custom-label"></label>
+	  
+      <input id="a9" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a9" class="checkbox-custom-label"></label>
+	  
+      <input id="a10" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a10" class="checkbox-custom-label"></label>
+	  
+      <input id="a11" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a11" class="checkbox-custom-label"></label>
+	  
+      <input id="a12" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a12" class="checkbox-custom-label"></label>
+	  
+      <input id="a13" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a13" class="checkbox-custom-label"></label>
+	  
+      <input id="a14" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a14" class="checkbox-custom-label"></label>
+	  
+      <input id="a15" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a15" class="checkbox-custom-label"></label>
+	  
+      <input id="a16" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a16" class="checkbox-custom-label"></label>
+	  
+      <input id="a17" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a17" class="checkbox-custom-label"></label>
+	  
+      <input id="a18" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a18" class="checkbox-custom-label"></label>
+	  
+      <input id="a19" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a19" class="checkbox-custom-label"></label>
+	  
+      <input id="a20" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="a20" class="checkbox-custom-label"></label>
+    </div>
+	
+	
+    <div>
+      <input id="b1" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b2" class="checkbox-custom-label"></label>
+   
+      
+      <input id="b2" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b2" class="checkbox-custom-label"></label>
+	  
+      <input id="b3" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b3" class="checkbox-custom-label"></label>
+	  
+      <input id="b4" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b4" class="checkbox-custom-label"></label>
+	  
+      <input id="b5" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b5" class="checkbox-custom-label"></label>
+	  
+      <input id="b6" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b6" class="checkbox-custom-label"></label>
+	  
+      <input id="b7" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b7" class="checkbox-custom-label"></label>
+	  
+      <input id="b8" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b8" class="checkbox-custom-label"></label>
+	  
+      <input id="b9" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b9" class="checkbox-custom-label"></label>
+	  
+      <input id="b10" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b10" class="checkbox-custom-label"></label>
+	  
+      <input id="b11" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b11" class="checkbox-custom-label"></label>
+	  
+      <input id="b12" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b12" class="checkbox-custom-label"></label>
+	  
+      <input id="b13" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b13" class="checkbox-custom-label"></label>
+	  
+      <input id="b14" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b14" class="checkbox-custom-label"></label>
+	  
+      <input id="b15" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b15" class="checkbox-custom-label"></label>
+	  
+      <input id="b16" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b16" class="checkbox-custom-label"></label>
+	  
+      <input id="b17" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b17" class="checkbox-custom-label"></label>
+	  
+      <input id="b18" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b18" class="checkbox-custom-label"></label>
+	  
+      <input id="b19" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b19" class="checkbox-custom-label"></label>
+	  
+      <input id="b20" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="b20" class="checkbox-custom-label"></label>
+    </div>
+	
+	
+    <div>
+      <input id="c1" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c1" class="checkbox-custom-label"></label>
+   
+      
+      <input id="c2" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)"  onclick="addseat(this.id)">
+      <label for="c2" class="checkbox-custom-label"></label>
+	  
+      <input id="c3" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c3" class="checkbox-custom-label"></label>
+	  
+      <input id="c4" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c4" class="checkbox-custom-label"></label>
+	  
+      <input id="c5" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c5" class="checkbox-custom-label"></label>
+	  
+      <input id="c6" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c6" class="checkbox-custom-label"></label>
+	  
+      <input id="c7" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c7" class="checkbox-custom-label"></label>
+	  
+      <input id="c8" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c8" class="checkbox-custom-label"></label>
+	  
+      <input id="c9" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c9" class="checkbox-custom-label"></label>
+	  
+      <input id="c10" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c10" class="checkbox-custom-label"></label>
+	  
+      <input id="c11" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c11" class="checkbox-custom-label"></label>
+	  
+      <input id="c12" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c12" class="checkbox-custom-label"></label>
+	  
+      <input id="c13" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c13" class="checkbox-custom-label"></label>
+	  
+      <input id="c14" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c14" class="checkbox-custom-label"></label>
+	  
+      <input id="c15" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c15" class="checkbox-custom-label"></label>
+	  
+      <input id="c16" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c16" class="checkbox-custom-label"></label>
+	  
+      <input id="c17" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c17" class="checkbox-custom-label"></label>
+	  
+      <input id="c18" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c18" class="checkbox-custom-label"></label>
+	  
+      <input id="c19" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c19" class="checkbox-custom-label"></label>
+	  
+      <input id="c20" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="c20" class="checkbox-custom-label"></label>
+    </div>
+	
+	
+    <div>
+      <input id="d1" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d1" class="checkbox-custom-label"></label>
+   
+      
+      <input id="d2" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)" >
+      <label for="d2" class="checkbox-custom-label"></label>
+	  
+      <input id="d3" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d3" class="checkbox-custom-label"></label>
+	  
+      <input id="d4" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d4" class="checkbox-custom-label"></label>
+	  
+      <input id="d5" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d5" class="checkbox-custom-label"></label>
+	  
+      <input id="d6" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d6" class="checkbox-custom-label"></label>
+	  
+      <input id="d7" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d7" class="checkbox-custom-label"></label>
+	  
+      <input id="d8" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d8" class="checkbox-custom-label"></label>
+	  
+      <input id="d9" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d9" class="checkbox-custom-label"></label>
+	  
+      <input id="d10" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d10" class="checkbox-custom-label"></label>
+	  
+      <input id="d11" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d11" class="checkbox-custom-label"></label>
+	  
+      <input id="d12" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d12" class="checkbox-custom-label"></label>
+	  
+      <input id="d13" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d13" class="checkbox-custom-label"></label>
+	  
+      <input id="d14" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d14" class="checkbox-custom-label"></label>
+	  
+      <input id="d15" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d15" class="checkbox-custom-label"></label>
+	  
+      <input id="d16" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d16" class="checkbox-custom-label"></label>
+	  
+      <input id="d17" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d17" class="checkbox-custom-label"></label>
+	  
+      <input id="d18" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d18" class="checkbox-custom-label"></label>
+	  
+      <input id="d19" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d19" class="checkbox-custom-label"></label>
+	  
+      <input id="d20" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="d20" class="checkbox-custom-label"></label>
+    </div>
+	
+	
+	
+	<br>
+	<img src="court.png">
+	<br><br>
+	
+	
+    <div>
+      <input id="e1" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e1" class="checkbox-custom-label"></label>
+   
+      
+      <input id="e2" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)" >
+      <label for="e2" class="checkbox-custom-label"></label>
+	  
+      <input id="e3" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e3" class="checkbox-custom-label"></label>
+	  
+      <input id="e4" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e4" class="checkbox-custom-label"></label>
+	  
+      <input id="e5" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e5" class="checkbox-custom-label"></label>
+	  
+      <input id="e6" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e6" class="checkbox-custom-label"></label>
+	  
+      <input id="e7" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e7" class="checkbox-custom-label"></label>
+	  
+      <input id="e8" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e8" class="checkbox-custom-label"></label>
+	  
+      <input id="e9" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e9" class="checkbox-custom-label"></label>
+	  
+      <input id="e10" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e10" class="checkbox-custom-label"></label>
+	  
+      <input id="e11" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e11" class="checkbox-custom-label"></label>
+	  
+      <input id="e12" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e12" class="checkbox-custom-label"></label>
+	  
+      <input id="e13" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e13" class="checkbox-custom-label"></label>
+	  
+      <input id="e14" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e14" class="checkbox-custom-label"></label>
+	  
+      <input id="e15" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e15" class="checkbox-custom-label"></label>
+	  
+      <input id="e16" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e16" class="checkbox-custom-label"></label>
+	  
+      <input id="e17" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e17" class="checkbox-custom-label"></label>
+	  
+      <input id="e18" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e18" class="checkbox-custom-label"></label>
+	  
+      <input id="e19" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e19" class="checkbox-custom-label"></label>
+	  
+      <input id="e20" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="e20" class="checkbox-custom-label"></label>
+    </div>
+	
+	
+    <div>
+      <input id="f1" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f1" class="checkbox-custom-label"></label>
+   
+      
+      <input id="f2" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)" >
+      <label for="f2" class="checkbox-custom-label"></label>
+	  
+      <input id="f3" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f3" class="checkbox-custom-label"></label>
+	  
+      <input id="f4" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f4" class="checkbox-custom-label"></label>
+	  
+      <input id="f5" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f5" class="checkbox-custom-label"></label>
+	  
+      <input id="f6" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f6" class="checkbox-custom-label"></label>
+	  
+      <input id="f7" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f7" class="checkbox-custom-label"></label>
+	  
+      <input id="f8" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f8" class="checkbox-custom-label"></label>
+	  
+      <input id="f9" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f9" class="checkbox-custom-label"></label>
+	  
+      <input id="f10" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f10" class="checkbox-custom-label"></label>
+	  
+      <input id="f11" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f11" class="checkbox-custom-label"></label>
+	  
+      <input id="f12" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f12" class="checkbox-custom-label"></label>
+	  
+      <input id="f13" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f13" class="checkbox-custom-label"></label>
+	  
+      <input id="f14" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f14" class="checkbox-custom-label"></label>
+	  
+      <input id="f15" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f15" class="checkbox-custom-label"></label>
+	  
+      <input id="f16" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f16" class="checkbox-custom-label"></label>
+	  
+      <input id="f17" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f17" class="checkbox-custom-label"></label>
+	  
+      <input id="f18" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f18" class="checkbox-custom-label"></label>
+	  
+      <input id="f19" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f19" class="checkbox-custom-label"></label>
+	  
+      <input id="f20" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="f20" class="checkbox-custom-label"></label>
+    </div>
+	
+	
+    <div>
+      <input id="g1" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g1" class="checkbox-custom-label"></label>
+   
+      
+      <input id="g2" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)" >
+      <label for="g2" class="checkbox-custom-label"></label>
+	  
+      <input id="g3" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g3" class="checkbox-custom-label"></label>
+	  
+      <input id="g4" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g4" class="checkbox-custom-label"></label>
+	  
+      <input id="g5" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g5" class="checkbox-custom-label"></label>
+	  
+      <input id="g6" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g6" class="checkbox-custom-label"></label>
+	  
+      <input id="g7" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g7" class="checkbox-custom-label"></label>
+	  
+      <input id="g8" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g8" class="checkbox-custom-label"></label>
+	  
+      <input id="g9" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g9" class="checkbox-custom-label"></label>
+	  
+      <input id="g10" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g10" class="checkbox-custom-label"></label>
+	  
+      <input id="g11" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g11" class="checkbox-custom-label"></label>
+	  
+      <input id="g12" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g12" class="checkbox-custom-label"></label>
+	  
+      <input id="g13" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g13" class="checkbox-custom-label"></label>
+	  
+      <input id="g14" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g14" class="checkbox-custom-label"></label>
+	  
+      <input id="g15" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g15" class="checkbox-custom-label"></label>
+	  
+      <input id="g16" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g16" class="checkbox-custom-label"></label>
+	  
+      <input id="g17" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g17" class="checkbox-custom-label"></label>
+	  
+      <input id="g18" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g18" class="checkbox-custom-label"></label>
+	  
+      <input id="g19" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g19" class="checkbox-custom-label"></label>
+	  
+      <input id="g20" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="g20" class="checkbox-custom-label"></label>
+    </div>
+	
+	
+    <div>
+      <input id="h1" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h1" class="checkbox-custom-label"></label>
+   
+      
+      <input id="h2" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)" >
+      <label for="h2" class="checkbox-custom-label"></label>
+	  
+      <input id="h3" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h3" class="checkbox-custom-label"></label>
+	  
+      <input id="h4" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h4" class="checkbox-custom-label"></label>
+	  
+      <input id="h5" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h5" class="checkbox-custom-label"></label>
+	  
+      <input id="h6" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h6" class="checkbox-custom-label"></label>
+	  
+      <input id="h7" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h7" class="checkbox-custom-label"></label>
+	  
+      <input id="h8" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h8" class="checkbox-custom-label"></label>
+	  
+      <input id="h9" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h9" class="checkbox-custom-label"></label>
+	  
+      <input id="h10" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h10" class="checkbox-custom-label"></label>
+	  
+      <input id="h11" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h11" class="checkbox-custom-label"></label>
+	  
+      <input id="h12" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h12" class="checkbox-custom-label"></label>
+	  
+      <input id="h13" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h13" class="checkbox-custom-label"></label>
+	  
+      <input id="h14" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h14" class="checkbox-custom-label"></label>
+	  
+      <input id="h15" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h15" class="checkbox-custom-label"></label>
+	  
+      <input id="h16" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h16" class="checkbox-custom-label"></label>
+	  
+      <input id="h17" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h17" class="checkbox-custom-label"></label>
+	  
+      <input id="h18" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h18" class="checkbox-custom-label"></label>
+	  
+      <input id="h19" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h19" class="checkbox-custom-label"></label>
+	  
+      <input id="h20" class="checkbox-custom" name="" type="checkbox" onclick="addseat(this.id)">
+      <label for="h20" class="checkbox-custom-label"></label>
+    </div>
+	
+</div>
+    
+
+
+
+<center><input type="button" class="proceedbutton" name="seat" onclick="cls()" value="Proceed">
+	
+	
+</form>
+
+</body>
+</html>

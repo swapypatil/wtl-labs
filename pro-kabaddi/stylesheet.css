@@ -1,0 +1,26 @@
+#nav{
+height:50px;
+background-color:#1e73be;
+}
+#nav_wrapper
+{
+margin-left:200px;
+margin-right:200px;
+}
+#nav ul
+{
+color:white;
+font-size:20px;
+align:center;
+font-family:Times New Roman;
+}
+#nav ul li
+{
+display:inline-block;
+
+}
+#nav ul li:hover {
+background-color:white;
+}
+#nav ul li:hover a{
+color:#1e73be;
