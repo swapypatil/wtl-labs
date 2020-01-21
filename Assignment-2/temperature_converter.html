@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <title>Temperature Converter - Javascript</title>
+        <script>
+
+            function convertToCelsius(){
+                var fahr = parseInt(document.getElementById("input").value);
+                alert("Converted Temperature(in Celsius) : " + ((fahr - 32) / 1.8));
+            }
+            
+            function convertToFahrenheit(){
+                var cels = parseInt(document.getElementById("input").value);
+                alert("Converted Temperature(in Fahrenheit) : " + ((cels * 1.8) + 32));
+            }
+
+        </script>
+         <style>
+            input{
+                padding: 5px;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="padding: 20px;height: 300px; width: 400px;text-align: left;border: 3px solid #000000;"> 
+            Enter Temperature : <input id="input" type="number"/><br>
+            <input type="button" onclick="convertToCelsius()" value="Convert to Celsius"><br>
+            <input type="button" onclick="convertToFahrenheit()" value="Ceonvert to Fahrenheit">
+        </div>
+    </body>
+</html>
