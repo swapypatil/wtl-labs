@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Odd/Even - Javascript</title>
+        <script>
+
+            function checkNumber(){
+                var num1 = parseInt(document.getElementById("num1").value);
+				if(num1 % 2 == 0){
+					alert("It's a Even Number");
+				}
+				else{
+					alert("It's a Odd Number");
+				}
+			}
+            
+        </script>
+        <style>
+            input{
+                padding: 5px;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="padding: 20px; height: 300px; width: 400px;text-align: left;border: 3px solid #000000; display: list-item;"> 
+            Enter Number : <input id="num1" type="number"/><br>
+            <input type="button" onclick="checkNumber()" value="Check Even/Odd">
+        </div>
+    </body>
+</html>
