@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Login Checker - Javascript</title>
+        <script>
+
+            function checkLogin(){
+                var uname = document.getElementById("user").value;
+                var passw = document.getElementById("pass").value;
+				if(uname.length == 0 || passw.length == 0){
+					alert("Empty.......Enter all the fields.");
+				}
+				else{
+					alert("Logged in with Username : " + uname);
+				}
+			}
+            
+        </script>
+        <style>
+            input{
+                padding: 5px;
+                margin: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <div style="padding: 20px; height: 300px; width: 400px;text-align: left;border: 3px solid #000000; display: list-item;"> 
+            Enter Username : <input id="user" type="text"/><br> 
+            Enter Password : <input id="pass" type="password"/><br>
+            <input type="button" onclick="checkLogin()" value="Login">
+        </div>
+    </body>
+</html>
